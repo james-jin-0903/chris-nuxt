@@ -1,0 +1,21 @@
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__day {
+    font-size: 7.2rem;
+    font-weight: 600;
+    color: var(--color-gold);
+    margin-bottom: 1.2rem;
+    line-height: 1;
+  }
+
+  &__month-year {
+    font-size: 1.8rem;
+    color: var(--color-gray);
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}

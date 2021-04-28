@@ -1,0 +1,57 @@
+{
+  "name": "test-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "start:test": "nuxt --dotenv=.env.test",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js",
+    "fake-server": "json-server -p 3030 fakes/fake-webinars.json",
+    "start-and-open-cypress": "start-server-and-test start:test http-get://localhost:3000 cypress:open",
+    "start-and-run-cypress": "start-server-and-test start:test http-get://localhost:3000 cypress:run",
+    "e2e": "start-server-and-test fake-server http-get://localhost:3030 start-and-open-cypress",
+    "e2e:silent": "start-server-and-test fake-server http-get://localhost:3030 start-and-run-cypress",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "core-js": "^3.9.1",
+    "json-server": "^0.16.3",
+    "nuxt": "^2.15.3",
+    "vue-svg-loader": "^0.16.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "babel-eslint": "^10.1.0",
+    "cypress": "^7.0.1",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.7.0",
+    "fibers": "^5.0.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "postcss": "^8.2.8",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "sass-loader": "10",
+    "start-server-and-test": "^1.12.1"
+  }
+}

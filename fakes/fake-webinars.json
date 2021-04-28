@@ -1,0 +1,68 @@
+{
+  "webinars": [
+    {
+      "title": "NuxtJS Global Conference WWW",
+      "timeZone": "Europe/London",
+      "thumbnail": "https://allansolutions.com/tests/webinars/logos/logo-nuxt.svg",
+      "url": "https://us02web.zoom.us/webinar/register/fhkjsdhfkjhweuj",
+      "webinars": [
+        {
+          "title": "Static Site Generation with NuxtWWWW",
+          "blurb": "With static site generation you can render your application during the build phase and deploy it to any static hosting services such as Netlify, GitHub pages, Vercel etc.",
+          "startDateTime": "2021/04/12 08:00",
+          "endDateTime": "2021/04/12 10:00",
+          "timeZone": "Europe/London",
+          "url": "https://us02web.zoom.us/webinar/register/fhkjsdhfkjhweuj",
+          "speakers": [
+            {
+              "name": "Alexandre Chopin",
+              "company": "NuxtJS",
+              "position": "CEO"
+            },
+            {
+              "name": "Sébastien Chopin",
+              "company": "NuxtJS",
+              "position": "CTO"
+            }
+          ]
+        },
+        {
+          "title": "Nuxt 3 Upcoming Features",
+          "blurb": "We discuss the new up and coming features in Nuxt 3, including Webpack 5 and Vite support, PostCSS 8, ESBuild and more!",
+          "startDateTime": "2021/04/12 10:00",
+          "endDateTime": "2021/04/12 12:00",
+          "timeZone": "Europe/London",
+          "speakers": [
+            {
+              "name": "Sébastien Chopin",
+              "company": "NuxtJS",
+              "position": "CTO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vue.js Amsterdam",
+      "timeZone": "Europe/London",
+      "thumbnail": "https://allansolutions.com/tests/webinars/logos/logo-vue.svg",
+      "url": "https://us02web.zoom.us/webinar/register/dfwejfnmklwef",
+      "webinars": [
+        {
+          "title": "Vue 3 New Features",
+          "blurb": "We discuss some of the exciting new featuers in Vue 3, including Composition API, Teleport and Fragments",
+          "startDateTime": "2021/04/22 09:00",
+          "endDateTime": "2021/04/22 10:00",
+          "timeZone": "Europe/London",
+          "speakers": [
+            {
+              "name": "Evan You",
+              "company": "Vue Technology LLC",
+              "position": "Founder"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.webinar {
+  display: flex;
+  margin-bottom: 6.1rem;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+
+  &__date {
+    margin-right: 8.6rem;
+    margin-top: 6rem;
+    flex-shrink: 0;
+
+    @media (max-width: 650px) {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__banner {
+    margin-bottom: 4.1rem;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+  }
+}
